@@ -2,12 +2,11 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
+  <title>actually boofd.site</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<title>actually boofd.site</title>
 
 
   <h1 class="rainbow">boofd.site
@@ -104,11 +103,20 @@
 
 <hr>
 
+<p> dumb video/audio test </p>
+
 <video width="320" height="240" controls>
-  <source src="video.mp4" type="video/mp4">
-  <source src="video.ogg" type="video/ogg">
+  <source src="./video/video.mp4" type="video/mp4">
+  <source src="./video/video.ogg" type="video/ogg">
 Your browser does not support the video tag.
 </video>
+
+  <!-- audio visualizer !-->
+  <div id="content">
+  <canvas id="canvas"></canvas>
+  <audio id="audio" controls></audio>
+  <input type="file" id="thefile" accept="audio/*" />
+</div>
 
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -125,7 +133,7 @@ Your browser does not support the video tag.
 <h2>wow moving text test</h2>
     <marquee direction="right"
              behavior="alternate"
-             style="border:BLACK 2px SOLID">
+             style="border:black 2px SOLID">
         bored
     </marquee>
 	
@@ -133,11 +141,29 @@ Your browser does not support the video tag.
 	<!-- random change so i can push this to github !-->
  
 <p><a href="super secret settings.html" target="_blank"><b><u>super secret settings</u></b></a></p>
+
+<hr>
+
+<p id="js"></p>
+
+<script>
+
+document.getElementById("js") .innerHTML = "test thing";
+
+</script>
+
+<p id="p2">why is it blue</p>
+
+<script>
+document.getElementById("p2").style.color = "blue";
+</script>
   
+<hr>
   
-  </body>
+</body>
 </html>
 <!-- partial -->
-  
+  <script  src="./script.js"></script>
+
 </body>
 </html>

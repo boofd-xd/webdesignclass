@@ -1,5 +1,5 @@
 .container{
-  background-color:#E0F2F1;
+  background-color:#2F3136;
   padding:10px;
   border-radius:15px;
   box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
@@ -68,4 +68,28 @@ h1, h2{
   80%{color: DeepPink;}
   90%{color: DodgerBlue;}
 	100%{color: orange;}
+}
+
+/* audio visualizer junk */
+
+#thefile {
+  position: center;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+#canvas {
+  position: center;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 50%;
+}
+
+audio {
+  position: center;
+  left: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
 }
